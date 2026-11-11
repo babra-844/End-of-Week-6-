@@ -1,0 +1,114 @@
+# SpendWise – Budget Management Application
+
+## Project Description
+
+SpendWise is a simple budget management application developed using HTML, CSS, and JavaScript. It helps users manage their budgets by entering their total budget and expenses and calculating their remaining balance.
+
+The main goal of SpendWise is to demonstrate the use of JavaScript fundamentals in a practical budgeting application.
+
+## Technologies Used
+
+- HTML5 – Structures the webpage.
+- CSS3 – Styles the application.
+- JavaScript – Handles user input, calculations, and application logic.
+
+## JavaScript Concepts Implemented
+
+### 1. Variables
+
+Variables are used to store important budgeting information.
+
+Examples:
+
+```javascript
+let totalBudget = 50000;
+let totalExpenses = 15000;
+let remainingBalance = totalBudget - totalExpenses;
+```
+
+The variables store the total budget, expenses, and remaining balance.
+
+### 2. User Input
+
+The application uses the JavaScript `prompt()` function to collect information from users.
+
+```javascript
+let totalBudget = Number(prompt("Enter your total budget:"));
+let totalExpenses = Number(prompt("Enter your total expenses:"));
+```
+
+The `Number()` function converts the input into numerical values that can be used in calculations.
+
+### 3. Budget Calculations
+
+SpendWise calculates the remaining balance by subtracting total expenses from the total budget.
+
+```javascript
+let remainingBalance = totalBudget - totalExpenses;
+```
+
+This helps users understand how much money remains after spending.
+
+### 4. Reusable Functions
+
+The application uses a reusable function called `calculateBalance()`.
+
+```javascript
+function calculateBalance(budget, expenses) {
+    return budget - expenses;
+}
+```
+
+The function accepts the budget and expenses as parameters and returns the remaining balance.
+
+Functions help organize the code, reduce repetition, and make the application easier to maintain.
+
+### 5. Displaying Results
+
+The application uses `console.log()` to display calculated budgeting information in the browser console.
+
+```javascript
+console.log("Total Budget: KES " + totalBudget);
+console.log("Total Expenses: KES " + totalExpenses);
+console.log("Remaining Balance: KES " + remainingBalance);
+```
+
+## How to Run the Project
+
+1. Download or clone the SpendWise repository.
+2. Open the project folder.
+3. Open `index.html` in a web browser.
+4. Enter your total budget when prompted.
+5. Enter your total expenses.
+6. Open the browser developer tools and select the Console tab to view the results.
+
+## Project Structure
+
+```text
+SpendWise/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## Learning Outcomes
+
+Through this project, I have learned how to:
+
+- Declare and use JavaScript variables.
+- Work with numerical data types.
+- Collect user input using `prompt()`.
+- Convert input into numbers using `Number()`.
+- Perform mathematical calculations.
+- Create and call reusable functions.
+- Display results using `console.log()`.
+
+## Author
+
+Created as part of a JavaScript learning assignment.
+
+**Project Name:** SpendWise  
+**Language:** JavaScript  
+**Purpose:** Basic Budget Management
